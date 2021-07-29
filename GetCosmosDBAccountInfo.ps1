@@ -1,11 +1,10 @@
 ﻿cls
 $AppsubscriptionId = "Replace the Subscription ID in which the Service Principle was created" 
-$resourceGroupName = "Replace the Resource name in which the Service Pinciple was created"
 $appTenantId ="Replace the Tenant Id in which the Service Principle was created"
 $appId="Replace the Registered Application Id"
-$pwd = "Replace the Scret created in the Registered Application"
+$pwd = "Replace the Scret value created in the Registered Application"
 
-$ExportPath="D:\Supportability Cx Engagements\GetAzureResourceRestAPI\"
+$ExportPath="Replace the path to export "
 $SubFileName= $ExportPath + "\" + "SubList.json"
 $AccountFileName= $ExportPath + "\" + "CosmosDBAccountList.json"
 $DBFileName= $ExportPath + "\" + "CosmosDBDatabaseList.json"
