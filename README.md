@@ -7,7 +7,10 @@ non-interactively by using Azure AD Service principal by generating access token
 with all properties for a given resource and resource type on which the Service principal have read permission.
 
 ## Use cases
-Administrator or Business owner can lookup up any specific properties through simple Json lookup or flaten the json file for reporting purposes or automating a work flow.
+1. Administrator or Business owner can lookup up any specific properties through simple Json lookup or flaten the json file for reporting purposes or automating a work flow.
+2. The script is written in powershell.  If required can be deployed as Azure function or batch job. Also, the sample can be replicated to anyother languange or script quickly.
+
+
 
 ## Steps to run the script
 
