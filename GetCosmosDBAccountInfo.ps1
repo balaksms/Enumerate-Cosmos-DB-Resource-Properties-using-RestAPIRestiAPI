@@ -1,10 +1,9 @@
 ﻿cls
-$AppsubscriptionId = "xxxxx"
-$resourceGroupName = "xx"
-$appname ="xx"
-$appTenantId ="xx"
-$appId="xx"
-$pwd = "xxx"
+$AppsubscriptionId = "Replace the Subscription ID in which the Service Principle was created" 
+$resourceGroupName = "Replace the Resource name in which the Service Pinciple was created"
+$appTenantId ="Replace the Tenant Id in which the Service Principle was created"
+$appId="Replace the Registered Application Id"
+$pwd = "Replace the Scret created in the Registered Application"
 
 $ExportPath="D:\Supportability Cx Engagements\GetAzureResourceRestAPI\"
 $SubFileName= $ExportPath + "\" + "SubList.json"
