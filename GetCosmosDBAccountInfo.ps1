@@ -518,15 +518,21 @@ function Export-CosmosDBInfo{
 
     $script:AuthToken=Get-AuthToken $appTenantId
 
-    $script:sublist = Get-SubscriptionList $AppsubscriptionId
+    if($null -ne $script:AuthToken)
+    {
+        $script:sublist = Get-SubscriptionList $AppsubscriptionId
 
-    Get-CosmosDBDatabaseAccounts $script:sublist
+        Get-CosmosDBDatabaseAccounts $script:sublist
 
-    Get-Databases
+        Get-Databases
 
-    Get-Containers
+        Get-Containers
 
-    Get-DatabaseContainerThroughput
+        Get-DatabaseContainerThroughput
 
-    Export-CosmosDBInfo
-
+        Export-CosmosDBInfo
+    }
+    else
+    {
+     Write-Error "Access Token Generation failed due to invalid parameters, Please review the appid, pwd values"
+    }
