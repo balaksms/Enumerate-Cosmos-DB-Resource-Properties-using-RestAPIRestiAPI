@@ -1,6 +1,6 @@
 ﻿cls
 $AppsubscriptionId = "Replace the Subscription ID in which the Service Principle was created" 
-$appTenantId ="Replace the Tenant Id in which the Service Principle was created"
+$appTenantId ="Replace the Tenant Id in which the Service Principal was created"
 $appId="Replace the Registered Application Id"
 $pwd = "Replace the Scret value created in the Registered Application"
 
